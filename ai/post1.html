@@ -1,1 +1,43 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Understanding GANs</title>
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+  <header>
+    <h1>Understanding GANs</h1>
+    <p>Generative Adversarial Networks: learning by competition</p>
+  </header>
+  <nav>
+    <ul>
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="../physics/index.html">Physics</a></li>
+      <li><a href="../math/index.html">Math</a></li>
+      <li><a href="../ai/index.html">AI</a></li>
+      <li><a href="../cs/index.html">CS</a></li>
+    </ul>
+  </nav>
+  <main>
+    <section>
+      <h2>What is a GAN?</h2>
+      <p>A Generative Adversarial Network consists of two neural networks, the Generator \(G\) and the Discriminator \(D\), competing in a zero-sum game:</p>
+      <p>\[ \min_G \max_D V(D, G) = \mathbb{E}_{x \sim p_{\text{data}}} [\log D(x)] + \mathbb{E}_{z \sim p_z} [\log(1 - D(G(z)))] \]</p>
+
+      <h2>How it works</h2>
+      <p>The generator tries to produce realistic samples to fool the discriminator, while the discriminator tries to distinguish between real and fake data. Through this adversarial process, the generator improves its ability to generate realistic data.</p>
+
+      <h2>Applications</h2>
+      <p>GANs have been widely used in image synthesis, style transfer, super-resolution, and even in creative fields such as art and music generation.</p>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2025 Physics & AI Blog. All rights reserved.</p>
+  </footer>
+</body>
+</html>

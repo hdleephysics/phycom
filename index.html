@@ -38,5 +38,16 @@
     <footer>
         <p>&copy; 2025 Physics & AI Blog. All rights reserved.</p>
     </footer>
+    <div style="text-align:center; margin-top: 20px; font-size: 0.9em; color: gray;">
+  Today's Visits: <span id="visit-count">Loading...</span>
+</div>
+
+<script>
+fetch('https://api.countapi.xyz/hit/hdleephysics-phycom/visits')
+  .then(res => res.json())
+  .then(res => {
+    document.getElementById('visit-count').innerText = res.value;
+  });
+</script>
 </body>
 </html>
